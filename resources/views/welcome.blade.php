@@ -7,7 +7,7 @@
         @vite('resources/css/app.css')
         <title>Laravel</title>
     </head>
-    <body style="width: 100%; height: 100%; background: #777; opacity: 0.3; position: absolute;" class="bg-[url('https://i.ibb.co/vPB17V9/background.jpg')] bg-no-repeat bg-top-center bg-fixed bg-cover opacity-[0.5]">
+    <body class="bg-[url('https://i.ibb.co/vPB17V9/background.jpg')] bg-no-repeat bg-top-center bg-fixed bg-cover opacity-[0.5]">
     </body>
 </html>
 
