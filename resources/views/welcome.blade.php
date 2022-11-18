@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        @vite('resources/css/app.css')
-        <title>Laravel</title>
-    </head>
-    <body style="width: 100%; height: 100%; background: #777; opacity: 0.3; position: absolute;" class="bg-[url('https://i.ibb.co/vPB17V9/background.jpg')] bg-no-repeat bg-top-center bg-fixed bg-cover opacity-[0.5]">
-    </body>
-</html>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite('resources/css/app.css')
+    <title>Laravel</title>
+</head>
+
+<body>
+    <div style="width: 100%; height: 100%; background: #777; opacity: 0.3; position: absolute;" class="bg-[url('https://i.ibb.co/vPB17V9/background.jpg')] bg-no-repeat bg-top-center bg-fixed bg-cover opacity-[0.5]">
+
+    </div>
+</body>
+
+</html>
