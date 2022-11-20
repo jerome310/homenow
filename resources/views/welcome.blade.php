@@ -8,7 +8,7 @@
     @vite('resources/css/app.css')
     <title>Laravel</title>
     <style>
-        .container {
+.container {
   background: #000 url(http://www.publicdomainpictures.net/pictures/30000/velka/autumn-forest-1351265582Bf1.jpg);
   color: #fff;
   width: 100%;
