@@ -1,0 +1,113 @@
+/* Mobile Version */
+body {
+    background: url('https://i.ibb.co/5RcpBct/homenow-background-image.jpg') no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    width: 100%;
+    height: 115vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .main-text h1 {
+    font-family: Roboto, sans-serif;
+    padding: 15px 0 5px;
+    font-size: 40px;
+    font-weight: 900;
+    margin-right: auto;
+}
+
+.main-text .text-description {
+  padding: 30px 0 60px 0;
+  font-size: 20px;
+  width: 90%;
+  margin-right: auto;
+}
+
+.main-text .logo {
+    padding-top: 120%;
+    width: 150px;
+    margin-right: auto;
+  }
+
+  .main-text img {
+    width: 130px;
+    margin-top: 100%;
+    padding-top: 150px;
+  }
+
+  .main-text h1 {
+    font-family: Roboto, sans-serif;
+    padding: 15px 0 5px;
+    font-size: 40px;
+    font-weight: 900;
+    margin-right: auto;
+}
+
+.main-text .text-description {
+    padding: 30px 0 60px 0;
+    font-size: 20px;
+    width: 90%;
+    margin-right: auto;
+  }
+
+  .main-text .button {
+    margin-right: auto;
+    background-color: #E70F2B;
+    padding: 20px 30px;
+    font-size: 20px;
+    color: #ffffff !important;
+  }
+
+  footer {
+    padding-top: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin: 0 auto;
+    line-height: 4em;
+  }
+
+  /* Tablet Version */
+  body {
+    background: url('https://i.ibb.co/5RcpBct/homenow-background-image.jpg') no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    width: 100%;
+    height: 115vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 5vh;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+  }
+
+  /* Desktop Version */
+
+    
+
+    
