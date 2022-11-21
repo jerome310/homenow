@@ -10,6 +10,7 @@
   <style>
     body {
       background: url('https://i.ibb.co/5RcpBct/homenow-background-image.jpg') no-repeat;
+      background-attachment: fixed;
       color: #fff;
       width: 100%;
       height: 100vh;
@@ -30,6 +31,7 @@
     }
 
     .text-container .logo {
+      padding-top: 30%;
       width: 150px;
       margin-right: auto;
     }
@@ -69,6 +71,15 @@
       background-color: #E70F2B;
       padding: 25px 50px;
       font-size: 20px;
+      color: #ffffff !important;
+    }
+
+    footer {
+      padding-top: 15%;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .color-overlay {
@@ -89,6 +100,18 @@
       <h1>Searching for a new home in the Hampton neighborhood?</h1>
       <p class="text-description">Get updates BEFORE a new home is even listed!</p>
       <a class="button" href="/">Send me updates first &#8702;</a>
+      <footer>
+        <div>
+          <a href="/">Contact Us</a>
+        </div>
+        <div>
+          <span>© 2020 HomeNow, All Rights Reserved. Created with</span>
+          <a href="/">Leadpages</a>
+        </div>
+        <div>
+          <span>We Respect Your <a href="/">Privacy</a></span>
+        </div>
+      </footer>
     </div>
     <div class="color-overlay"></div>
   </div>
