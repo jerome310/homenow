@@ -13,7 +13,7 @@
       background-attachment: fixed;
       color: #fff;
       width: 100%;
-      height: 100vh;
+      height: 110vh;
       position: relative;
       background-size: cover;
       background-position: center;
@@ -24,14 +24,15 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      height: 50vh;
+      height: 0vh;
       position: absolute;
       z-index: 1;
       padding-left: 45px;
+      width: 100%;
     }
 
     .text-container .logo {
-      padding-top: 30%;
+      padding-top: 50%;
       width: 150px;
       margin-right: auto;
     }
@@ -75,11 +76,16 @@
     }
 
     footer {
-      padding-top: 15%;
-      width: 90%;
+      padding-top: 20%;
+      width: 80%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-size: 14px;
+    }
+    
+    footer a {
+      text-decoration: underline;
     }
 
     .color-overlay {
