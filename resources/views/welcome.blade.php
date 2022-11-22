@@ -15,7 +15,7 @@
       background-attachment: fixed;
       color: #fff;
       width: 100%;
-      height: 150vh;
+      height: 125vh;
       position: relative;
       background-size: cover;
       background-position: center;
