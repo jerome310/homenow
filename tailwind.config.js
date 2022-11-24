@@ -10,10 +10,10 @@ module.exports = {
       'mobile': '500px',
        
 
-      'tablet': '1024px',
+      'tablet': '600px',
       
 
-      'desktop': '1280px',
+      'desktop': '800px',
       
     },
   },
