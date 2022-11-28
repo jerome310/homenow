@@ -21,7 +21,7 @@
         <footer class="leading-[4em] m-[0 auto] pt-[20%] w-[100%] flex flex-col justify-center items-center text-[12px]">
             <div>
                 <a class="underline" href="/">Contact Us</a>
-            </div>
+            </div >
             <div>
                 <span>© 2020 HomeNow, All Rights Reserved. Created with</span>
                 <a href="/">Leadpages</a>
