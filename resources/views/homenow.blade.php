@@ -18,10 +18,10 @@
             <p class="pt-[30px] pb-[60px] text-[20px] w-[90%] mr-[auto]">Get updates BEFORE a new home is even listed!</p>
             <a class="mr-[auto] bg-[#E70F2B] py-[25px] px-[50px] text-[20px] text-[#ffffff]" href="/">Send me updates first &#8702;</a>
         </div>
-        <footer class="leading-[4em] m-[0 auto] pt-[20%] w-[100%] flex flex-col justify-center items-center text-[12px]">
+        <footer class="leading-[4em] m-[0 auto] pt-[20%] w-[100%] desktop:flex desktop:flex-row desktop:justify-evenly mobile:flex mobile:flex-col mobile:justify-center mobile:items-center text-[12px]">
             <div>
                 <a class="underline" href="/">Contact Us</a>
-            </div >
+            </div>
             <div>
                 <span>© 2020 HomeNow, All Rights Reserved. Created with</span>
                 <a href="/">Leadpages</a>
