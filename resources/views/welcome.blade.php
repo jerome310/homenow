@@ -1,319 +1,39 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  @vite('resources/css/app.css')
-  <title>Laravel</title>
-  <style>
-    /* Desktop Version */
-    @media only screen and (min-width: 1024px) {
-      body {
-      background: url('https://i.ibb.co/5RcpBct/homenow-background-image.jpg') no-repeat;
-      background-attachment: fixed;
-      color: #fff;
-      width: 100%;
-      height: 125vh;
-      position: relative;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .text-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 40vh;
-      position: absolute;
-      z-index: 1;
-      padding-left: 45px;
-      width: 100%;
-    }
-
-    .main-text .logo {
-      padding-top: 50%;
-      width: 150px;
-      margin-right: auto;
-    }
-
-    .main-text img {
-      width: 130px;
-      margin-top: 50%;
-      padding-top: 150px;
-    }
-
-    .main-text p {
-      font-family: Roboto, sans-serif;
-      padding: 100px 0 0 5px;
-      font-size: 16px;
-      width: 100%;
-    }
-
-    .main-text h1 {
-      font-family: Roboto, sans-serif;
-      padding: 15px 0 5px;
-      font-size: 40px;
-      font-weight: 900;
-      margin-right: auto;
-    }
-
-    .main-text .text-description {
-      padding: 30px 0 50px 0;
-      font-size: 20px;
-      width: 43%;
-      margin-right: auto;
-    }
-
-    .main-text .button {
-      margin-right: auto;
-      background-color: #E70F2B;
-      padding: 25px 50px;
-      font-size: 20px;
-      color: #ffffff !important;
-    }
-
-    footer {
-      padding-top: 20%;
-      width: 80%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 14px;
-    }
-    
-    footer a {
-      text-decoration: underline;
-    }
-
-    .color-overlay {
-      width: 100%;
-      height: 100%;
-      background-color: #000942b3;
-      opacity: .7;
-      position: absolute;
-    }
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-      body {
-      background: url('https://i.ibb.co/5RcpBct/homenow-background-image.jpg') no-repeat;
-      background-attachment: fixed;
-      color: #fff;
-      width: 100%;
-      height: 115vh;
-      position: relative;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .text-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 5vh;
-      position: absolute;
-      z-index: 1;
-      width: 100%;
-    }
-
-    .main-text {
-      padding-left: 45px;
-    }
-
-    .main-text .logo {
-      padding-top: 20%;
-      width: 150px;
-      margin-right: auto;
-    }
-
-    .main-text img {
-      width: 130px;
-      margin-top: 100%;
-      padding-top: 150px;
-    }
-
-    .main-text p {
-      font-family: Roboto, sans-serif;
-      padding: 100px 0 0 5px;
-      font-size: 16px;
-      width: 100%;
-    }
-
-    .main-text h1 {
-        font-family: Roboto, sans-serif;
-        padding: 15px 0 5px;
-        font-size: 40px;
-        font-weight: 900;
-        margin-right: auto;
-    }
-
-    .main-text .text-description {
-      padding: 30px 0 60px 0;
-      font-size: 20px;
-      width: 90%;
-      margin-right: auto;
-    }
-
-    .main-text .button {
-      margin-right: auto;
-      background-color: #E70F2B;
-      padding: 20px 30px;
-      font-size: 20px;
-      color: #ffffff !important;
-    }
-
-    footer {
-      padding-top: 20%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-size: 12px;
-      margin: 0 auto;
-      line-height: 4em;
-    }
-    
-    footer a {
-      text-decoration: underline;
-    }
-
-    .color-overlay {
-      width: 100%;
-      height: 100%;
-      background-color: #000942b3;
-      opacity: .7;
-      position: absolute;
-    }
-    }
-    
-    /* Mobile Version */
-    @media only screen and (min-width: 500px) and (max-width: 767px) {
-      body {
-      background: url('https://i.ibb.co/5RcpBct/homenow-background-image.jpg') no-repeat;
-      background-attachment: fixed;
-      color: #fff;
-      width: 100%;
-      height: 115vh;
-      position: relative;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .text-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 40vh;
-      position: absolute;
-      z-index: 1;
-      width: 100%;
-    }
-
-    .main-text {
-      padding-left: 45px;
-    }
-
-    .main-text .logo {
-      padding-top: 120%;
-      width: 150px;
-      margin-right: auto;
-    }
-
-    .main-text img {
-      width: 130px;
-      margin-top: 100%;
-      padding-top: 150px;
-    }
-
-    .main-text p {
-      font-family: Roboto, sans-serif;
-      padding: 100px 0 0 5px;
-      font-size: 16px;
-      width: 100%;
-    }
-
-    .main-text h1 {
-        font-family: Roboto, sans-serif;
-        padding: 15px 0 5px;
-        font-size: 40px;
-        font-weight: 900;
-        margin-right: auto;
-    }
-
-    .main-text .text-description {
-      padding: 30px 0 60px 0;
-      font-size: 20px;
-      width: 90%;
-      margin-right: auto;
-    }
-
-    .main-text .button {
-      margin-right: auto;
-      background-color: #E70F2B;
-      padding: 20px 30px;
-      font-size: 20px;
-      color: #ffffff !important;
-    }
-
-    footer {
-      padding-top: 20%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-size: 12px;
-      margin: 0 auto;
-      line-height: 4em;
-    }
-    
-    footer a {
-      text-decoration: underline;
-    }
-
-    .color-overlay {
-      width: 100%;
-      height: 100%;
-      background-color: #000942b3;
-      opacity: .7;
-      position: absolute;
-    }
-    }
-   
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @vite('resources/css/app.css')
+    {{-- Alpine JS --}}
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Document</title>
 </head>
 
-<body>
-  <div class="container">
-    <div class="text-container">
-      <div class="main-text">
-        <a class="logo" href="https://ibb.co/9YND1Gj"><img src="https://i.ibb.co/F7Krynt/homenow-logo.png" alt="homenow-logo" border="0"></a>
-      <p>BE THE FIRST TO KNOW</p>
-      <h1>Searching for a new home in the Hampton neighborhood?</h1>
-      <p class="text-description">Get updates BEFORE a new home is even listed!</p>
-      <a class="button" href="/">Send me updates first &#8702;</a>
-      </div>
-      <footer>
-        <div>
-          <a href="/">Contact Us</a>
+<body style="background: url('https://i.ibb.co/5RcpBct/homenow-background-image.jpg') no-repeat; background-size: cover; background-attachment:fixed; background-position: center;" class="text-[#ffffff] w-[100%] desktop:h-[150vh] mobile:h-[140vh] tablet:h-[125vh] relative" x-data="{ 'showModal': false }" @keydown.escape="showModal = false" x-cloak>
+    <div class="flex flex-col items-center justify-center h-[40vh] absolute z-[1] p-[45px] w-[100%]">
+        <div class="font-[Roboto, sans-serif]">
+            <a class="mobile:pt-[120%] table:pt-[50%] w-[150px] mr-auto" href="https://ibb.co/9YND1Gj"><img class="mobile:mt-[175%] w-[130px] tablet:mt-[100%] pt[150px] desktop:mt-[80%]" src="https://i.ibb.co/F7Krynt/homenow-logo.png" alt="homenow-logo" border="0"></a>
+            <p class="pt-[100px] pl-[5px] text-[16px] w-[100%]">BE THE FIRST TO KNOW</p>
+            <h1 class="tablet:font-[700] pt-[15px] pb-[5px] text-[40px] mobile:font-[900] mr-[auto]">Searching for a new home in the Hampton neighborhood?</h1>
+            <p class="pt-[30px] pb-[60px] text-[20px] w-[90%] mr-[auto]">Get updates BEFORE a new home is even listed!</p>
+            <a class="mr-[auto] bg-[#E70F2B] py-[25px] px-[50px] text-[20px] text-[#ffffff]" href="/">Send me updates first &#8702;</a>
         </div>
-        <div>
-          <span>© 2020 HomeNow, All Rights Reserved. Created with</span>
-          <a href="/">Leadpages</a>
-        </div>
-        <div>
-          <span>We Respect Your <a href="/">Privacy</a></span>
-        </div>
-      </footer>
+        <footer class="leading-[4em] m-[0 auto] pt-[20%] w-[100%] flex desktop:flex-row mobile:flex-col desktop:justify-around mobile:items-center text-[12px]">
+            <div>
+                <a class="underline" href="/">Contact Us</a>
+            </div >
+            <div>
+                <span>© 2020 HomeNow, All Rights Reserved. Created with</span>
+                <a href="/">Leadpages</a>
+            </div>
+            <div>
+                <span>We Respect Your <a href="/">Privacy</a></span>
+            </div>
+        </footer>
     </div>
-    <div class="color-overlay"></div>
-  </div>
+    <div class="w-[100%] h-[100%] bg-[#000942b3] opacity-[.7] absolute"></div>
 </body>
 
 </html>
